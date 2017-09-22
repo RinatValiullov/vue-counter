@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/RinatValiullov/vue-counter#readme",
   "dependencies": {
+    "foundation-sites": "^6.4.3",
     "vue": "^2.4.4"
   }
 }
