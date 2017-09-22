@@ -10,11 +10,27 @@
 </head>
 <body>
 
+	<!-- Upper alert block -->
 	<div class="callout alert margin-bottom-2">
 		<p class="text-center">
 			Please note that this will not cross the limit, currently set at <b>5</b> to <b>35</b>!
 		</p>
 	</div>
+
+	<!--  -->
+	<div class="flex-container align-center">
+		<div id="app-root">
+			<!-- Increase counter, with an `increaseLimit` of 35 -->
+			<button class="button rounded shadow success">Increase</button>
+			<!-- Decrease counter, with an `decreaseLimit` of 5 -->
+			<button class="button rounded shadow success">Decrease</button>
+			<button class="button rounded shadow alert">Reset</button>
+			<p class="text-center">
+				Counter: {{ counter }} <br> Result: {{ output }}
+			</p>
+		</div>
+	</div>
+
 
 <script src="node_modules/vue/dist/vue.js"></script>
 <script src="script.js"></script>
