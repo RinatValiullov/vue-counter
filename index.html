@@ -21,10 +21,10 @@
 	<div class="flex-container align-center">
 		<div id="app-root">
 			<!-- Increase counter, with an `increaseLimit` of 35 -->
-			<button class="button rounded shadow success">Increase</button>
+			<button @click="increaseCounter(35)" class="button rounded shadow success">Increase</button>
 			<!-- Decrease counter, with an `decreaseLimit` of 5 -->
-			<button class="button rounded shadow success">Decrease</button>
-			<button class="button rounded shadow alert">Reset</button>
+			<button @click="decreaseCounter(5)" class="button rounded shadow success">Decrease</button>
+			<button @click="resetCounter" class="button rounded shadow alert">Reset</button>
 			<p class="text-center">
 				Counter: {{ counter }} <br> Result: {{ output }}
 			</p>
